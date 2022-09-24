@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/index.js --mode development\"",
+    "dev": "tsc --watch & nodemon -q dist/index.js --mode development",
     "build": "tsc",
     "start": "node dist/index.js --mode production"
   },
@@ -15,14 +15,12 @@
   "dependencies": {
     "config": "^3.3.7",
     "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "formidable": "^2.0.1"
+    "express": "^4.17.2"
   },
   "devDependencies": {
     "@types/config": "^3.3.0",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.14",
-    "@types/formidable": "^2.0.5",
     "@types/node": "^18.7.20",
     "concurrently": "^7.4.0",
     "nodemon": "^2.0.15",
