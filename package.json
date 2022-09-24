@@ -1,0 +1,23 @@
+{
+  "name": "rabbit_mq",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js --mode development",
+    "start": "node index.js --mode production"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "jaalorsa517",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "formidable": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
